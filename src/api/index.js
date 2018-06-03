@@ -1,0 +1,1 @@
+import login from './login'import table from './table'const api = {}Object.keys(login).forEach(key => {  api[key] = login[key]})Object.keys(table).forEach(key => {  api[key] = table[key]})export default api
