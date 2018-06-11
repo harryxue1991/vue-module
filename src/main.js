@@ -18,6 +18,10 @@ import api from './api/index'
 import '@/icons' // icon
 import '@/permission' // permission control
 
+import { post, get } from '@/api/http'
+Vue.prototype.$post = post
+Vue.prototype.$get = get
+
 Vue.use(ElementUI, { locale })
 // register global utility filters.
 Object.keys(filters).forEach(key => {
