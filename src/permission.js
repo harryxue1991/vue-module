@@ -16,7 +16,7 @@ router.beforeEach((to, from, next) => {
       console.log(2222)
       if (store.getters.roles.length === 0) {
         store.dispatch('GetInfo').then(res => { // 拉取用户信息
-          console.log(3333)
+          // console.log(3333)
           console.log(res)
           next()
         }).catch((err) => {
